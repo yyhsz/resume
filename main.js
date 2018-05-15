@@ -1,0 +1,1 @@
+siteWelcome.classList.remove('active')
