@@ -17,6 +17,7 @@ setTimeout(document.querySelectorAll(".slideUp")[0].classList.remove("offset"),2
 setTimeout(document.querySelector('.slideDown').classList.remove('offset'),2000)
 
 
+
 window.onscroll = function (x) {
     if (window.scrollY >= 50) { TopNavBar.classList.add('sticky'); inner.classList.add('sticky') }
     else { TopNavBar.classList.remove('sticky'); inner.classList.remove('sticky') }
