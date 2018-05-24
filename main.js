@@ -1,4 +1,4 @@
-//实现导航栏及其子菜单动效
+//实现导航栏及其子菜单动效 ; 实现高亮当前浏览元素
 let liTags = document.querySelectorAll('nav.menu > ul > li');
 for (let i = 0; i < liTags.length; i++) {
     liTags[i].onmouseenter = function (x) {
@@ -9,13 +9,38 @@ for (let i = 0; i < liTags.length; i++) {
         //x.currentTarget.classList.add('inactive');
     }
 }
-setTimeout(function () { siteWelcome.classList.remove('active') }, 0)
+//实现第一个元素上滑及导航栏下滑效果（打开页面即上滑）
+document.querySelectorAll('.slideUp')[0].classList.remove('offset');
+document.querySelector('.slideDown').classList.remove('offset');
 
-//强制展现加载动画
 window.onscroll = function (x) {
     if (window.scrollY >= 50) { TopNavBar.classList.add('sticky'); inner.classList.add('sticky') }
     else { TopNavBar.classList.remove('sticky'); inner.classList.remove('sticky') }
+    //实现高亮当前浏览元素
+    let highlightTags = document.querySelectorAll('.TopNavBar nav>ul>li');
+    let site = document.querySelectorAll('[highLight]');
+    //可以适应布局变化的导航栏元素高亮
+    for(let i = 0;i<site.length - 1;i++){
+        if(window.scrollY >= site[i].offsetTop-200 && window.scrollY <= site[i+1].offsetTop-200){
+            highlightTags[i].classList.add('highlight')
+        }
+        else{highlightTags[i].classList.remove('highlight')}
+    }
+    if(window.scrollY >= site[site.length-1].offsetTop-200){
+        highlightTags[site.length-1].classList.add('highlight')
+    }
+    else{ highlightTags[site.length-1].classList.remove('highlight')}
+    //实现下方元素上滑效果
+    for(let i = 1; i<document.querySelectorAll('.slideUp').length;i++){
+        if(window.scrollY + 1040/*视口高度*/>= document.querySelectorAll('.slideUp')[i].offsetTop + 230)
+        {document.querySelectorAll('.slideUp')[i].classList.remove('offset');}
+    }
 }
+
+
+//强制展现加载动画
+setTimeout(function () { siteWelcome.classList.remove('active') }, 0)
+
 
 //实现页面内跳转
 let aTags = document.querySelectorAll('nav.menu > ul > li > a');
@@ -29,21 +54,21 @@ for (let i = 0; i < aTags.length; i++) {
         let i = 1;
         let currentTop = window.scrollY;
         let targetTop = top - 80;
-        let t = Math.abs((currentTop - targetTop)/100 * 200);
-        t>500? t = 500 : t;
+        let t = Math.abs((currentTop - targetTop) / 100 * 200);
+        t > 500 ? t = 500 : t;
         function animate(time) {
             requestAnimationFrame(animate);
             TWEEN.update(time);
         }
         requestAnimationFrame(animate);
-        var coords = {y: currentTop }; 
-        var tween = new TWEEN.Tween(coords) 
-                .to({ y: targetTop }, t)
-                .easing(TWEEN.Easing.Quadratic.InOut)
-                .onUpdate(function() { 
-                    window.scrollTo(0,coords.y);
-                })
-                .start(); 
+        var coords = { y: currentTop };
+        var tween = new TWEEN.Tween(coords)
+            .to({ y: targetTop }, t)
+            .easing(TWEEN.Easing.Quadratic.InOut)
+            .onUpdate(function () {
+                window.scrollTo(0, coords.y);
+            })
+            .start();
 
 
 
@@ -68,7 +93,7 @@ for (let i = 0; i < aTags.length; i++) {
 
             }, 20)
 
-        } 改良版页面内跳转动画，勉强达到平滑效果 */  
+        } 改良版页面内跳转动画，勉强达到平滑效果 */
 
     }
 }
