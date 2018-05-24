@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +8,84 @@
     <title>resume</title>
     <style type="text/css">
         .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
         }
     </style>
     <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="./x.css">
     <script src="//at.alicdn.com/t/font_604057_m4tx03q18pzrrudi.js"></script>
 </head>
+
 <body>
-    <div id="siteWelcome"class="site-welcome active">
+    <div id="siteWelcome" class="site-welcome active">
         <div class="loading"></div>
     </div>
-    <div class="TopNavBar ">
-        <div class="inner clearfix">
-        <a class="logo">
-            <span class="rs">RS</span><span class="card">card</span>
-        </a>
-        <nav>
-        <ul class="clearfix">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">EXPERIENCE</a></li>
-            <li><a href="#">PRICING</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CALENDAR</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">OTHER</a></li>
-        </ul>
-        </nav>
+    <div id="TopNavBar" class="TopNavBar">
+        <div id="inner" class="inner clearfix">
+            <a class="logo">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+            <nav class="menu">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#siteAbout">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#siteSkills">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#sitePortfolio">PORTFOLIO</a>
+                        <ul class="submenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a href="#">PRICING</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                        <ul class="submenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CALENDAR</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#">OTHER</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
     <div class="banner">
         <div class="mask"></div>
     </div>
-    <main>
-            <div class="usercard">
-            
+    <main id="siteAbout">
+        <div class="usercard">
+
             <div class="selfieAndintro clearfix">
                 <div class="selfie">
                     <img src="./img/avatar2.jpg" alt="selfie">
                 </div>
                 <div class="intro">
                     <span class="hello">Hello
-                    <span class="triangle"></span>
+                        <span class="triangle"></span>
                     </span>
                     <h1 style="margin-top:20px;margin-bottom:16px;color: rgb(60, 67, 79);">I'm YYH</h1>
                     <p style="color: rgb(60, 67, 79);">Font-end engineer </p>
@@ -71,54 +103,63 @@
                 </div>
             </div>
             <footer class="media">
-                <a href="#"><svg class="icon" aria-hidden="true">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-yugutou"></use>
-                    </svg></a>
-                <a href="#"><svg class="icon" aria-hidden="true">
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
-                    </svg></a>
-                <a href="#"><svg class="icon" aria-hidden="true">
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-rss"></use>
-                    </svg></a>
-                
+                    </svg>
+                </a>
+
             </footer>
-            </div>
-            
-        
-            <div class="download"> <a href="./xie.txt" target="_blank" download>DOWNLOAD MY RESUME</a>
-            </div>
-            <P> Hello! I’m Robert 
-                Senior Web Developer specializing in front end
-                Experienced with all stages of the development cycle for dynamic web projects. 
-                Well-versed in numerous programming languages including JavaScript, SQL, and C.</P>
-        
-        </main>
-    
-    <section class="skill">
+        </div>
+
+
+        <div class="download">
+            <a href="./xie.txt" target="_blank" download>DOWNLOAD MY RESUME</a>
+        </div>
+        <P> Hello! I’m Robert Senior Web Developer specializing in front end Experienced with all stages of the development cycle
+            for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C.</P>
+
+    </main>
+
+    <section class="skill" id="siteSkills">
         <h2>Professional Skills</h2>
         <ol>
             <div class="skillcard clearfix">
-            <li >HTML5 &amp; CSS3
-                    <div class="meter" >
-                            <span style="width: 60%"></span>
-                          </div></li>
-            <li>Javascript
-                    <div class="meter" >
-                            <span style="width: 40%"></span>
-                          </div></li>
-            <li>jQuary
-                    <div class="meter" >
-                            <span style="width: 70%"></span>
-                          </div></li>
-            <li>Vue
-                    <div class="meter" >
-                            <span style="width: 90%"></span>
-                          </div></li>
+                <li>HTML5 &amp; CSS3
+                    <div class="meter">
+                        <span style="width: 60%"></span>
+                    </div>
+                </li>
+                <li>Javascript
+                    <div class="meter">
+                        <span style="width: 40%"></span>
+                    </div>
+                </li>
+                <li>jQuary
+                    <div class="meter">
+                        <span style="width: 70%"></span>
+                    </div>
+                </li>
+                <li>Vue
+                    <div class="meter">
+                        <span style="width: 90%"></span>
+                    </div>
+                </li>
             </div>
         </ol>
-        
+
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="sitePortfolio">
         <h2>Portfolio</h2>
         <nav>
             <ol class="clearfix">
@@ -126,35 +167,37 @@
                 <li id="portfolio2">框架</li>
                 <li id="portfolio3">原生Js&amp;CSS</li>
             </ol>
-            
+
             <div id="portfoliobar" class="bar state-1">
                 <div class="bar-inner"></div>
             </div>
         </nav>
         <script>
-                portfolio1.onclick =function(){
-                    portfoliobar.className = 'bar state-1'
-                }
-                portfolio2.onclick =function(){
-                    portfoliobar.className = 'bar state-2'
-                }
-                portfolio3.onclick =function(){
-                    portfoliobar.className = 'bar state-3'
-                }
-     
+            portfolio1.onclick = function () {
+                portfoliobar.className = 'bar state-1'
+            }
+            portfolio2.onclick = function () {
+                portfoliobar.className = 'bar state-2'
+            }
+            portfolio3.onclick = function () {
+                portfoliobar.className = 'bar state-3'
+            }
+
         </script>
-    <div class="works">
-        <div class="big" style="top:0%;left:0%;">
-            <img src="./img/2.jpg" alt="first work">
+        <div class="works">
+            <div class="big" style="top:0%;left:0%;">
+                <img src="./img/2.jpg" alt="first work">
+            </div>
+            <div class="small" style="top:0%; left:645px;">
+                <img src="./img/3.jpg" alt="second work">
+            </div>
+            <div class="small" style="top:298px; left:645px;">
+                <img src="./img/4.jpg" alt="third work">
+            </div>
         </div>
-        <div class="small" style="top:0%; left:645px;">
-            <img src="./img/3.jpg" alt="second work">
-        </div>
-        <div class="small" style="top:298px; left:645px;">
-            <img src="./img/4.jpg" alt="third work">
-        </div>
-    </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
