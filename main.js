@@ -39,7 +39,7 @@ window.onscroll = function (x) {
 
 
 //强制展现加载动画
-setTimeout(function () { siteWelcome.classList.remove('active') }, 0)
+setTimeout(function () { siteWelcome.classList.remove('active') }, 1500)
 
 
 //实现页面内跳转
