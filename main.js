@@ -1,3 +1,6 @@
+//强制展现加载动画
+setTimeout(function () { siteWelcome.classList.remove('active') }, 0)
+
 //实现导航栏及其子菜单动效 ; 实现高亮当前浏览元素
 let liTags = document.querySelectorAll('nav.menu > ul > li');
 for (let i = 0; i < liTags.length; i++) {
@@ -10,8 +13,9 @@ for (let i = 0; i < liTags.length; i++) {
     }
 }
 //实现第一个元素上滑及导航栏下滑效果（打开页面即上滑）
-document.querySelectorAll('.slideUp')[0].classList.remove('offset');
-document.querySelector('.slideDown').classList.remove('offset');
+setTimeout(document.querySelectorAll(".slideUp")[0].classList.remove("offset"),2000)
+setTimeout(document.querySelector('.slideDown').classList.remove('offset'),2000)
+
 
 window.onscroll = function (x) {
     if (window.scrollY >= 50) { TopNavBar.classList.add('sticky'); inner.classList.add('sticky') }
@@ -38,8 +42,6 @@ window.onscroll = function (x) {
 }
 
 
-//强制展现加载动画
-setTimeout(function () { siteWelcome.classList.remove('active') }, 1500)
 
 
 //实现页面内跳转
