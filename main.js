@@ -31,6 +31,7 @@ window.onscroll = function (x) {
         }
         else{highlightTags[i].classList.remove('highlight')}
     }
+    //最后一个元素单独高亮
     if(window.scrollY >= site[site.length-1].offsetTop-200){
         highlightTags[site.length-1].classList.add('highlight')
     }
