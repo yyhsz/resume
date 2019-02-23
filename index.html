@@ -16,8 +16,10 @@
         }
     </style>
     <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="./x.css">
     <script src="//at.alicdn.com/t/font_604057_m4tx03q18pzrrudi.js"></script>
+    <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -103,7 +105,7 @@
                 </div>
             </div>
             <footer class="media">
-                <a href="#">
+                <a href="https://www.jianshu.com/u/b4375b2e781c" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-yugutou"></use>
                     </svg>
@@ -126,8 +128,10 @@
         <div class="download">
             <a href="./xie.txt" target="_blank" download>DOWNLOAD MY RESUME</a>
         </div>
-        <P> Hello! I’m Robert Senior Web Developer specializing in front end Experienced with all stages of the development cycle
-            for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C.</P>
+        <P> Hello! I’m Robert Senior Web Developer specializing in front end Experienced with all stages of the
+            development cycle
+            for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C.
+        </P>
 
     </main>
 
@@ -167,7 +171,6 @@
                 <li id="portfolio2">框架</li>
                 <li id="portfolio3">原生Js&amp;CSS</li>
             </ol>
-
             <div id="portfoliobar" class="bar state-1">
                 <div class="bar-inner"></div>
             </div>
@@ -184,17 +187,22 @@
             }
 
         </script>
-        <div class="works">
-            <div class="big" style="top:0%;left:0%;">
-                <img src="./img/2.jpg" alt="first work">
-            </div>
-            <div class="small" style="top:0%; left:645px;">
-                <img src="./img/3.jpg" alt="second work">
-            </div>
-            <div class="small" style="top:298px; left:645px;">
-                <img src="./img/4.jpg" alt="third work">
-            </div>
+
+        <!--轮播-->
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="./works/canvas.jpg" class="swiper-slide">
+                    <img src="./works/nav-page.jpg" class="swiper-slide">
+                    <img src="./works/slider.jpg" class="swiper-slide">
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
         </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
     <script src="./main.js"></script>

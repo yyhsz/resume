@@ -267,6 +267,20 @@ body>main p{
     width: 100%;height: 600px;
 }
 .portfolio .works .big,.portfolio .works .small{position: absolute;}
+.portfolio .swiper-container {width: 720px;height: 540px;}
+.portfolio .swiper-button-prev{
+    background-color:#fff;
+    left:500px;
+    width: 64px;height: 64px;
+    border-radius: 50%;
+}
+.portfolio .swiper-button-next{
+    background-color:#fff;
+    width: 64px;height: 64px;
+    right: 500px;
+    border-radius: 50%;
+
+}
 
 
 
