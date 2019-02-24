@@ -5,6 +5,7 @@ hr{color:rgb(159, 162, 169);height: 0;border:none;border-top: 1px solid;}
 ul>li{list-style: none;}
 *{padding: 0;margin: 0;}
 
+.icon {width: 1em;height: 1em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
 .slideUp.offset{transform: translateY(140px);}
 .slideUp{transform: translateY(0);transition:  all 0.5s ease-out;}
 .TopNavBar.slideDown.offset{transform: translateY(-88px);}
@@ -229,6 +230,7 @@ body>main p{
 
 
 .portfolio{text-align: center;margin-bottom: 200px;}
+.portfolio>h2{margin-bottom: 40px;}
 .portfolio>nav {max-width: 940px;font-size: 0;text-align: center;display: inline-block;}
 .portfolio>nav>ol{display: inline-block;    vertical-align: top;}
 .portfolio>nav>ol>li
@@ -244,7 +246,7 @@ body>main p{
     margin-left: 40px;
     cursor: pointer;
 }
-.portfolio>nav>ol>li:first-child{margin-left: 0;}
+/* .portfolio>nav>ol>li:first-child{margin-left: 0;}
 .portfolio>nav .bar{  
     background: white;
     margin-top: 7px;
@@ -266,7 +268,7 @@ body>main p{
     margin-left:auto; margin-right:auto;
     width: 100%;height: 600px;
 }
-.portfolio .works .big,.portfolio .works .small{position: absolute;}
+.portfolio .works .big,.portfolio .works .small{position: absolute;} */
 .portfolio .swiper-container {width: 720px;height: 540px;}
 .portfolio .swiper-button-prev{
     background-color:#fff;
