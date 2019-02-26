@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./x.css">
     <script src="//at.alicdn.com/t/font_604057_m4tx03q18pzrrudi.js"></script>
     <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="./node_modules\leancloud-storage\dist/av-min.js"></script>
 </head>
 
 <body>
@@ -198,16 +199,28 @@
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
         </div>
-
     </section>
+    <section class="message">
+        <h2>留言</h2>
+        <ol id="messageList">
+        </ol>
+        <form action="" id="postMessage">
+            <label>姓名</label>
+            <input type="text" name="name">
+            <label>内容</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/skip-insideThePage.js"></script>
     <script src="./js/auto-slide-up.js"></script>
     <script src="./js/sticky-topbar.js"></script>
     <script src="./js/init-swiper.js"></script>
+    <script src="./js/message.js"></script>
 </body>
 
 </html>
