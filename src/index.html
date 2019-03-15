@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>resume</title>
+    <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/x.css">
+    
+</head>
+
+<body>
+    <!--加载动画-->
+    <!-- <div id="siteWelcome" class="site-welcome active">
+        <div class="loading"></div>
+    </div> -->
+    <div id="TopNavBar" class="TopNavBar slideDown offset">
+        <div id="inner" class="inner clearfix">
+            <a class="logo">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+            <nav class="menu">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#siteAbout">关于我</a>
+                    </li>
+                    <li>
+                        <a href="#siteSkills">技能介绍</a>
+                    </li>
+                    <li>
+                        <a href="#sitePortfolio">作品</a>
+                    </li>
+                    <li>
+                        <a href="#message">留言板</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main id="siteAbout" class="slideUp offset" highLight>
+            <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiangxia"></use>
+                </svg>
+        <div class="usercard">
+            <div class="selfieAndintro clearfix">
+                <div class="selfie">
+                    <img src="./img/avatar2.jpg" alt="selfie">
+                </div>
+                <div class="intro">
+                    <span class="hello">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1 style="margin-top:20px;margin-bottom:16px;color: rgb(60, 67, 79);">I'm YYH</h1>
+                    <p style="color: rgb(60, 67, 79);">应聘前端实习生</span>
+                    <hr>
+                    
+                    <div class="information">
+                        <div>
+                            <div class="row"><span>年龄:</span><span>20</span></div>
+                            <div class="row"><span>地址:</span><span>北京</span></div>
+                            <div class="row"><span>邮箱:</span><span>victyyh@foxmail</span></div>
+                            <div class="row"><span>手机:</span><span>13263218588</span></div>
+                        </div>
+                        <!-- <dl class="clearfix">
+                            <dt>AGE</dt>
+                            <dd>20</dd>
+                            <dt>ADDRESS</dt>
+                            <dd>BEIJING</dd>
+                            <dt>E-MAIL</dt>
+                            <dd>245235@qq.com</dd>
+                            <dt>PHONE</dt>
+                            <dd>234523453</dd>
+                        </dl> -->
+                        <div>
+                                <div class="row"><span>微信（QQ）:</span><span>591985864</span></div>
+                                <div class="row"><span>在读院校:</span><span>北京科技大学</span></div>
+                                <div class="row"><span>专业:</span><span>通信工程</span></div>
+                                <div class="row"><span>英语等级:</span><span>CET-4</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="https://www.jianshu.com/u/b4375b2e781c" target="_blank">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-yanzheng-jianshu-copy"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/yyhsz" target="_black">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-git"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <div class="download">
+            <a href="./xie.txt" target="_blank" download='余银海-应聘前端实习生-2019'>下载PDF版简历</a>
+        </div>
+    </main>
+    <section class="skill slideUp offset" id="siteSkills" highLight>
+        <h2>个人技能</h2>
+        <ol>
+            <div class="skillcard clearfix">
+                <li>HTML5 &amp; CSS3 &amp; JavaScript
+                    <div class="meter  offset">
+                        <span style="width: 60%"></span>
+                    </div>
+                </li>
+                <li>jQuery、Bootstrap等前端常用库
+                    <div class="meter  offset">
+                        <span style="width: 40%"></span>
+                    </div>
+                </li>
+                <li>Vue
+                    <div class="meter  offset">
+                        <span style="width: 30%"></span>
+                    </div>
+                </li>
+                <li>其他
+                    <div class="meter  offset">
+                        <span style="width: 40%"></span>
+                    </div>
+                </li>
+            </div>
+        </ol>
+    </section>
+    <section class="portfolio offset slideUp" id="sitePortfolio" highLight>
+        <h2>作品集</h2>
+        <!--作品展示框的上方提示栏-->
+        <!-- <nav>
+            <ol class="clearfix">
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生Js&amp;CSS</li>
+            </ol>
+            <div id="portfoliobar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
+        </nav>
+        <script>
+            portfolio1.onclick = function () {
+                portfoliobar.className = 'bar state-1'
+            }
+            portfolio2.onclick = function () {
+                portfoliobar.className = 'bar state-2'
+            }
+            portfolio3.onclick = function () {
+                portfoliobar.className = 'bar state-3'
+            }
+
+        </script> -->
+
+        <!--轮播-->
+        <div id="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- <img src="./works/canvas.jpg" class="swiper-slide">
+                    <img src="./works/nav-page.jpg" class="swiper-slide">
+                    <img src="./works/slider.jpg" class="swiper-slide"> -->
+                    <div class="works swiper-slide">
+                        <div>
+                            <h4>jQuery实现带管理页面的网易云音乐</h4>
+                        <div>项目描述:</div>
+                            <ol>
+                                <li>通过HTML+CSS+<em>jQuery</em>实现</li>
+                                <li>配合<em>flex布局、rem、vh/vw</em>做到适配移动端</li>
+                                <li>使用leanCloud存储用户数据，七牛云存储上传的文件</li>
+                            </ol>
+                        <div>项目预览：<a href="https://yyhsz.github.io/music163-demo/src/home.html" target="_blank">点此查看</a></div>
+                        <div>源码链接：<a href="https://github.com/yyhsz/music163-demo" target="_blank">点此查看</a></div>
+                        <div>预览二维码：<img src="https://i.loli.net/2019/03/15/5c8ba20800d2e.png" alt=""></div>
+
+                        </div><img src="https://i.loli.net/2019/03/15/5c8b9e03bf0f2.jpg" alt="">
+                    </div>
+                    <div class="works swiper-slide">
+                        <img src="https://i.loli.net/2019/03/15/5c8b9e8d7a2c1.jpg" alt="">
+                        <img src="https://i.loli.net/2019/03/15/5c8b9e9880cd2.jpg" alt="">                        
+                    </div>
+                    <div class="works swiper-slide">
+                        <div>
+                            <h4>原生JS实现可调速的“制作哆啦A梦”过程动画</h4>
+                            <div>项目描述:</div>
+                                <ol>
+                                    <li>使用<em>原生JS+CSS</em>实现</li>
+                                    <li>使用setTimeout函数实现动画调速过程</li>
+                                    <li>使用<em>Prism.js</em>实现代码高亮</li>
+                                </ol>
+                            <div>项目预览：<a href="https://yyhsz.github.io/draw-A-Doraemon/index.html" target="_blank">点此查看</a></div>
+                            <div>源码链接：<a href="https://github.com/yyhsz/draw-A-Doraemon" target="_blank">点此查看</a></div>
+                            <div>预览二维码：<img src="https://i.loli.net/2019/03/15/5c8ba19ee345f.png" alt=""></div>
+
+                        </div><img src="https://i.loli.net/2019/03/15/5c8ba0ddb4c08.jpg" alt="">
+                    </div>
+                    <div class="works swiper-slide">
+                        <div>
+                            <h4>在线简历</h4>
+                            <div>项目描述:</div>
+                               <ol>
+                                    <li>使用<em>原生JS+CSS</em>实现</li>
+                                    <li>使用<em>MVC模式</em>组织代码</li>
+                                    <li>使用<em>Tween.js</em>实现缓动效果</li>
+                                </ol>
+                        </div>
+                        <img src="" alt="">
+                    </div>
+                    <div class="works swiper-slide">
+                        <div>
+                                <h4>简单的注册与登陆页面</h4>
+                                <div>项目描述:</div>
+                                        <ol>
+                                            <li>使用<em>原生JS+Node.js</em>模拟用户注册与登陆</li>
+                                            <li>运用<em>session</em>、<em>cookie</em>与<em>localStorage</em>操控相关数据</li>
+                                        </ol>
+                                <div>源码链接：<a href="https://github.com/yyhsz/sign_in_demo" target="_blank">点此查看</a></div>
+                        </div><img src="https://i.loli.net/2019/03/15/5c8ba7b2f0cf7.jpg" style="width:48%" alt="">
+                    </div>
+
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要滚动条 -->
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        
+    </section>
+    <section class="message" id='message'>
+        <h2>留言</h2>
+        <ol id="messageList">
+        </ol>
+        <form action="" id="postMessage">
+            <label>姓名</label>
+            <input type="text" name="name">
+            <label>内容</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+    <script src="//at.alicdn.com/t/font_1090675_nka2w6z7fbr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
+    <script src="./js/base/View.js"></script>
+    <script src="./js/base/Model.js"></script>
+    <script src="./js/base/Controller.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/skip-insideThePage.js"></script>
+    <script src="./js/auto-slide-up.js"></script>
+    <script src="./js/sticky-topbar.js"></script>
+    <script src="./js/init-swiper.js"></script>
+    <script src="./js/message.js"></script>
+</body>
+
+</html>
