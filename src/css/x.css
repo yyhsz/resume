@@ -450,7 +450,7 @@ body > main >.icon{
 .portfolio .works .big,.portfolio .works .small{position: absolute;} */
 .portfolio .swiper-container {
   width: 720px;
-  height: 540px; }
+  height: 600px; }
 
 .portfolio .swiper-button-prev {
   background-color: #fff;
