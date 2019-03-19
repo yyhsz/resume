@@ -178,12 +178,12 @@ ol > li {
   box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.52); }
 
 .usercard .selfie > img {
-  width: 290px;
-  height: 330px;
+  width: 215px;
+  height: 290px;
   background-size: cover; }
 
 .usercard .selfieAndintro {
-  padding: 65px 50px; }
+  padding: 65px 25px; }
 
 .intro .hello {
   background: rgb(180, 225, 220);
@@ -203,8 +203,8 @@ ol > li {
 
 .intro {
   float: left;
-  margin-left: 65px;
-  width: 680px;
+  padding-left: 30px;
+  width: 615px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold; }
 
