@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>resume</title>
-    <link rel="stylesheet" href="./loading.css">
+    <!-- <link rel="stylesheet" href="./loading.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <link rel="stylesheet" href="./css/x.css">
-    
+
 </head>
 
 <body>
@@ -45,9 +45,9 @@
         <div class="mask"></div>
     </div>
     <main id="siteAbout" class="slideUp offset" highLight>
-            <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-xiangxia"></use>
-                </svg>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-xiangxia"></use>
+        </svg>
         <div class="usercard">
             <div class="selfieAndintro clearfix">
                 <div class="selfie">
@@ -58,31 +58,20 @@
                         <span class="triangle"></span>
                     </span>
                     <h1 style="margin-top:20px;margin-bottom:16px;color: rgb(60, 67, 79);">余银海</h1>
-                    <p style="color: rgb(60, 67, 79);">应聘前端实习生</span>
-                    <hr>
-                    
+                    <p style="color: rgb(60, 67, 79);">应聘前端工程师</span>
+                        <hr>
+
                     <div class="information">
-                        <div>
-                            <div class="row"><span>年龄:</span><span>20</span></div>
-                            <div class="row"><span>实习地点:</span><span>北京、深圳</span></div>
-                            <div class="row"><span>邮箱:</span><span>victyyh@foxmail</span></div>
-                            <div class="row"><span>微信（QQ）:</span><span>591985864</span></div>
-                        </div>
-                        <!-- <dl class="clearfix">
-                            <dt>AGE</dt>
-                            <dd>20</dd>
-                            <dt>ADDRESS</dt>
-                            <dd>BEIJING</dd>
-                            <dt>E-MAIL</dt>
-                            <dd>245235@qq.com</dd>
-                            <dt>PHONE</dt>
-                            <dd>234523453</dd>
-                        </dl> -->
-                        <div>
-                                <div class="row"><span>在读院校:</span><span>北京科技大学</span></div>
-                                <div class="row"><span>专业:</span><span>通信工程</span></div>
-                                <div class="row"><span>英语等级:</span><span>CET-4</span></div>
-                        </div>
+                        <ul>
+                            <li>年龄：22</li>
+                            <li>邮箱：591985864@qq.com</li>
+                            <li>微信（QQ）：591985864</li>
+                        </ul>
+                        <ul>
+                            <li>教育经历：北京科技大学 211</li>
+                            <li>专业：通信工程</li>
+                            <li>英语等级：CET-4 CET-6</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -170,77 +159,75 @@
                     <img src="./works/slider.jpg" class="swiper-slide"> -->
                     <div class="works swiper-slide">
                         <div>
-                            <h4>jQuery实现带管理页面的网易云音乐</h4>
-                        <div>项目描述:</div>
+                            <h3>仿蘑菇街商城</h3>
+                            <h4>项目描述:</h4>
                             <ol>
-                                <li>通过HTML+CSS+<em>jQuery</em>实现歌曲管理页面的歌曲上传，歌曲信息修改等功能</li>
-                                <li>配合<em>flex布局、rem、vh/vw</em>做到适配移动端，有歌词滚动等常见功能</li>
-                                <li>使用leanCloud存储用户数据，七牛云存储上传的文件</li>
+                                <li>使用VueCli、VueRouter、Vuex进行开发</li>
+                                <li>使用axios调用接口</li>
+                                <li>项目实现了浏览商品详情，加入购物车等功能</li>
+                                <li>使用better-scroll实现滚动</li>
+                                <li><a href="https://github.com/yyhsz/market" target="_blank">项目源码</a></li>
+                                <li>项目预览二维码：</li>
+                                <img src="./img/market.png" alt="">
                             </ol>
-                        <div>项目预览：<a href="https://yyhsz.github.io/music163-demo/src/home.html" target="_blank">点此查看</a></div>
-                        <div>项目源码：<a href="https://github.com/yyhsz/music163-demo" target="_blank">点此查看</a></div>
-                        <div>预览二维码：<img src="https://i.loli.net/2019/03/15/5c8ba20800d2e.png" alt=""></div>
-
-                        </div><img src="https://i.loli.net/2019/03/15/5c8b9e03bf0f2.jpg" alt="">
-                    </div>
-                    <div class="works swiper-slide">
-                        <img src="https://i.loli.net/2019/03/15/5c8b9e8d7a2c1.jpg" alt="">
-                        <img src="https://i.loli.net/2019/03/15/5c8b9e9880cd2.jpg" alt="">                        
-                    </div>
-                    <div class="works swiper-slide">
-                        <img src="https://i.loli.net/2019/03/16/5c8c76e3767b0.jpg" style="width:720px" alt="">                     
+                        </div><img src="./img/preview1.png" alt="">
                     </div>
                     <div class="works swiper-slide">
                         <div>
-                            <h4>原生JS实现可调速的“制作哆啦A梦”过程动画</h4>
-                            <div>项目描述:</div>
-                                <ol>
-                                    <li>使用<em>原生JS+CSS</em>实现</li>
-                                    <li>使用setTimeout函数实现动画调速过程</li>
-                                    <li>使用<em>Prism.js</em>实现代码高亮</li>
-                                </ol>
-                            <div>项目预览：<a href="https://yyhsz.github.io/draw-A-Doraemon/index.html" target="_blank">点此查看</a></div>
-                            <div>项目源码：<a href="https://github.com/yyhsz/draw-A-Doraemon" target="_blank">点此查看</a></div>
-                            <div>预览二维码：<img src="https://i.loli.net/2019/03/15/5c8ba19ee345f.png" alt=""></div>
-
-                        </div><img src="https://i.loli.net/2019/03/15/5c8ba0ddb4c08.jpg" alt="">
+                            <h3>哔哩哔哩UI</h3>
+                            <h4>项目描述:</h4>
+                            <ol>
+                                <li>使用Vue3 、TypeScript、vite开发的一款UI组件库</li>
+                                <li>该UI目前包含了Button组件、Switch组件、Dialog组件等</li>
+                                <li>通过开发本项目，掌握了Vue3基本用法和TypeScrip基本语法</li>
+                                <li><a href="https://yyhsz.github.io/bili-ui-doc/index.html" target="_blank">预览链接</a></li>
+                                <li><a href="https://github.com/yyhsz/bilibili-ui" target="_blank">项目源码</a></li>
+                            </ol>
+                        </div><img src="./img/preview2.png" alt="">
                     </div>
                     <div class="works swiper-slide">
-                        <div style="width:718px">
-                            <h4>在线简历</h4>
-                            <div>项目描述:</div>
-                               <ol>
-                                    <li>使用<em>原生JS+CSS</em>实现</li>
-                                    <li>使用<em>MVC模式</em>组织代码</li>
-                                    <li>使用<em>Tween.js</em>实现缓动效果</li>
-                                </ol>
-                            <div>项目源码：<a href="https://github.com/yyhsz/resume" target="_blank">点此查看</a></div>
-
+                        <img src="./img/preview3.png" alt=""><img src="./img/preview4.png" alt="">
+                    </div>
+                    <div class="works swiper-slide">
+                        <div>
+                            <h3>原生JS+jQuery实现bilibili首页</h3>
+                            <h4>项目描述:</h4>
+                            <ol>
+                                <li>使用了媒体查询处理首页的banner</li>
+                                <li>实现弹幕的跑马灯效果</li>
+                                <li>实现鼠标悬停预览视频效果</li>
+                                <li>使用swiper.js实现轮播图</li>
+                                <li><a href="https://yyhsz.github.io/bilbil/src/" target="_blank">预览链接</a></li>
+                                <li><a href="https://github.com/yyhsz/bilbil" target="_blank">项目源码</a></li>
+                            </ol>
                         </div>
-                        <img src="https://i.loli.net/2019/03/19/5c908c95c8c4c.jpg" style='width:360px'alt="">
+                    </div>
+                    <div class="works bili  swiper-slide">
+                        <img src="./img/preview5.png" alt="">
                     </div>
                     <div class="works swiper-slide">
                         <div>
-                                <h4>简单的注册与登陆页面</h4>
-                                <div>项目描述:</div>
-                                        <ol>
-                                            <li>使用<em>原生JS+Node.js</em>模拟用户注册与登陆</li>
-                                            <li>运用<em>session</em>、<em>cookie</em>与<em>localStorage</em>操控相关数据</li>
-                                        </ol>
-                                <div>项目源码：<a href="https://github.com/yyhsz/sign_in_demo" target="_blank">点此查看</a></div>
-                        </div><img src="https://i.loli.net/2019/03/15/5c8ba7b2f0cf7.jpg" style="width:48%" alt="">
+                            <h3>原生JS实现可调速的“制作哆啦A梦”过程动画</h3>
+                            <h4>项目描述:</h4>
+                            <ol>
+                                <li>原生JS 配合CSS3动画效果实现制作一个哆啦A梦的全过程</li>
+                                <li>用 flex布局 和简单css适配移动端不同尺寸大小的屏幕</li>
+                                <li>使用setTimeout函数实现动画调速</li>
+                                <li>使用 Prism.js 实现代码高亮</li>
+                                <li><a href="https://yyhsz.github.io/draw-A-Doraemon/index.html" target="_blank">预览链接</a></li>
+                                <li><a href="https://github.com/yyhsz/draw-A-Doraemon" target="_blank">项目源码</a></li>
+                            </ol>
+                        </div><img src="./img/preview6.png" alt="">
                     </div>
-
                 </div>
                 <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
-                <!-- 如果需要滚动条 -->
             </div>
             <!-- 如果需要导航按钮 -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-        
+
     </section>
     <section class="message" id='message'>
         <h2>留言板</h2>
